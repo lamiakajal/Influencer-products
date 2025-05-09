@@ -1,0 +1,374 @@
+/* font linking here */
+/* poppins font */
+@font-face {
+  src: url(../fonts/poppins/poppins-bold.otf);
+  font-family: "poppins-bold";
+}
+@font-face {
+  src: url(../fonts/poppins/poppins-semibold.otf);
+  font-family: "poppins-semibold";
+}
+@font-face {
+  src: url(../fonts/poppins/poppins-medium.otf);
+  font-family: "poppins-medium";
+}
+/* inter font */
+@font-face {
+  src: url(../fonts/inter/inter-bold.otf);
+  font-family: "inter-bold";
+}
+@font-face {
+  src: url(../fonts/inter/inter-regular.otf);
+  font-family: "inter-regular";
+}
+/* manrope font */
+@font-face {
+  src: url(../fonts/manrope/manrope-bold.otf);
+  font-family: "manrope-bold";
+}
+/* ************************
+****    Global CSS     ****
+***************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+/* header start */
+header {
+  padding: 35px 0;
+}
+.head-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a {
+  display: inline-block;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: "poppins-bold";
+  font-weight: 700;
+  color: #3a3a3a;
+  transition: transform 0.8s ease, color 0.8s ease;
+}
+.logo a:hover {
+  color: #e02c6d;
+  transform: scale(1.2);
+}
+.nav {
+  width: 60%;
+}
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.nav ul li {
+  list-style: none;
+  float: left;
+}
+.nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 35px;
+  font-size: 16px;
+  font-family: "poppins-semibold";
+  font-weight: 600;
+  color: #3a3a3a;
+  text-transform: capitalize;
+  transition: transform 0.8s ease, color 0.8s ease;
+}
+.nav ul li a:last-child {
+  padding-right: 0;
+}
+.nav ul li a:hover {
+  color: #e02c6d;
+  transform: scale(1.2);
+}
+/* header end */
+/* hero start */
+.hero {
+  padding-top: 25px;
+  padding-bottom: 70px;
+}
+.hero-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content {
+  padding-top: 90px;
+  width: 40%;
+}
+.content h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 52px;
+  font-family: "poppins-bold";
+  font-weight: 700;
+  color: #3a3a3a;
+  line-height: 70px;
+}
+.content p {
+  width: 75%;
+  font-family: "poppins-medium";
+}
+.prebook {
+  padding-top: 30px;
+}
+button {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-family: "poppins-semibold";
+  color: #ffffff;
+  background: #e02c6d;
+  border-radius: 41px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.8s ease, background 0.8s ease, color 0.8s ease;
+}
+button i {
+  margin-left: 10px;
+}
+button:hover {
+  background: #3a3a3a;
+  color: #ffffff;
+  transform: scale(1.2);
+}
+/* hero end */
+.b-img img {
+  width: 100%;
+  padding-right: 0;
+  float: right;
+}
+/* hero end */
+/* mall start */
+.malls {
+  padding-bottom: 70px;
+}
+.mall-container {
+  margin: 0 auto;
+  padding: 30px 0;
+  width: 85%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.06),
+    /* only top */ 0 2px 4px rgba(0, 0, 0, 0.06); /* only bottom */
+}
+.mall-content {
+  padding-top: 10px;
+}
+.mall-content ul {
+  display: flex;
+  justify-content: center;
+}
+.mall-content ul li {
+  list-style: none;
+  margin: 0 60px;
+}
+.mall-content ul li a img {
+  transition: 0.8s;
+}
+.mall-content ul li a img:hover {
+  transform: scale(1.2);
+  transition: 0.8s;
+}
+/* mall end */
+/* box start */
+.product {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.p-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.p-container h1 {
+  padding-top: 30px;
+  font-size: 28px;
+  font-family: "poppins-semibold";
+  font-weight: 600;
+  color: #3a3a3a;
+  line-height: 70px;
+  text-align: center;
+}
+.p-content {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 2.5%;
+  flex-wrap: wrap;
+  column-gap: 2.5%;
+  row-gap: 45px;
+}
+.p-single {
+  width: 28%;
+  font-family: inter-bold;
+  color: #3a3a3a;
+  background: #ffffff;
+  padding: 30px 1.5% 45px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.07);
+  transition: 0.8s;
+  cursor: pointer;
+}
+.p-single:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
+  background: #e02c6d;
+  color: #ffffff;
+}
+.p-img {
+  border-radius: 8px;
+}
+.p-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+.p-content h2 {
+  padding-top: 22px;
+}
+.p-content h3 {
+  padding-top: 22px;
+}
+.p-content p {
+  padding-top: 22px;
+  width: 55%;
+}
+.p2 p {
+  padding-top: 5px;
+  padding-bottom: 2px;
+  width: 60%;
+}
+
+/* btn */
+.see-more-btn {
+  font-size: 16px;
+  font-family: "poppins-semibold", sans-serif;
+  color: #e02c6d;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.33s linear;
+  display: inline-flex;
+  align-items: center;
+  float: right;
+  overflow: hidden;
+  padding-right: 85px;
+  padding-top: 50px;
+  transition: 0.8s;
+}
+.see-more-btn:hover {
+  color: #3a3a3a;
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+.see-more-btn i {
+  margin-left: 10px;
+}
+
+.see-more-btn:hover {
+  color: #3a3a3a; /* Matches your hover color */
+}
+/* product end */
+/* banner2 start */
+.ban2 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.con2 {
+  padding-top: 70px;
+  float: right;
+  width: 37%;
+}
+.img2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 37%;
+}
+
+.img2 img {
+  width: 100%;
+}
+
+.con2 h1 {
+  font-size: 38px;
+}
+.con2 p {
+  width: 96%;
+}
+/* banner2 end */
+/* footer start */
+footer {
+  padding: 70px 0;
+  background: #090826;
+}
+.pages {
+  text-align: center;
+}
+.pages ul {
+  margin: 0;
+  padding: 0;
+}
+.pages ul li,
+.social ul li {
+  list-style: none;
+}
+.pages ul li a.foot {
+  font-family: "poppins-bold";
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.pages ul li a {
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "manrope-bold";
+  font-size: 16px;
+
+  transition: 0.8s;
+}
+.pages ul li a:hover {
+  color: #e02c6d;
+  transform: scale(1.2);
+  transition: 0.8s;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background-color: #1a1530; /* dark circle */
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.social a:hover {
+  transform: scale(1.2);
+  background-color: #e02c6d; /* hover color */
+}
+/* footer end */
